@@ -1,0 +1,31 @@
+# This is an example PKGBUILD file. Use this as a start to creating your own,
+# and remove these comments. For more information, see 'man PKGBUILD'.
+# NOTE: Please fill out the license field for your package! If it is unknown,
+# then please put 'unknown'.
+
+# Maintainer: Mr Chainman <mrchainman@chainman.xyz>
+pkgname=chainos-config-meta
+pkgver="0.1"
+pkgrel=1
+epoch=
+pkgdesc="Meta Config package for ChainOS"
+depends=(
+"chainos-application-theming"
+"chainos-btop-config"
+"chainos-dunst-config"
+"chainos-eww-config"
+"chainos-kitty-config"
+"chainos-mpv-config"
+"chainos-neomutt-config"
+"chainos-neovim-config"
+"chainos-newsboat-config"
+"chainos-qtile-config"
+"chainos-qutebrowser-config"
+"chainos-rofi-config"
+"chainos-spotify-config"
+"chainos-starship-config"
+"chainos-vifm-config"
+"chainos-zathura-config"
+)
+arch=("x86_64")
+license=("GPL")

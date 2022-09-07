@@ -1,0 +1,22 @@
+# This is an example PKGBUILD file. Use this as a start to creating your own,
+# and remove these comments. For more information, see 'man PKGBUILD'.
+# NOTE: Please fill out the license field for your package! If it is unknown,
+# then please put 'unknown'.
+
+# Maintainer: Mr Chainman <mrchainman@chainman.xyz>
+pkgname=chainos-utils
+pkgver="0.2"
+pkgrel=1
+epoch=
+pkgdesc="Some utilities for ChainOS"
+arch=("x86_64")
+url="https://github.com/mrchainman/$pkgname/archive/refs/tags/$pkgver.tar.gz"
+license=('GPL')
+source=("$url")
+md5sums=("2b6579c913c7034b599b24f78259a41b")
+
+package() {
+	tar xf $pkgver.tar.gz
+	mkdir -p $pkgdir/usr/bin/
+	install -m 0755 $srcdir/$pkgname-$pkgver/chainos-* $pkgdir/usr/bin/
+}
