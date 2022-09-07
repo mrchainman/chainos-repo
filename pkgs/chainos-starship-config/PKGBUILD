@@ -20,5 +20,5 @@ cksums=(SKIP)
 package() {
 	tar xf $pkgname-$pkgver.tar.gz
 	mkdir -p $pkgdir/etc/chainos
-	cp -r $srcdir/$pkgname-$pkgname-$pkgver/starship $pkgdir/etc/chainos/
+	cp -r $srcdir/$pkgname-$pkgname-$pkgver/starship.toml $pkgdir/etc/chainos/
 }
