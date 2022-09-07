@@ -12,6 +12,7 @@ pkgdesc="Meta Config package for ChainOS"
 depends=(
 "chainos-application-theming"
 "chainos-btop-config"
+"chainos-bash-config"
 "chainos-dunst-config"
 "chainos-eww-config"
 "chainos-kitty-config"
