@@ -1,0 +1,23 @@
+# This is an example PKGBUILD file. Use this as a start to creating your own,
+# and remove these comments. For more information, see 'man PKGBUILD'.
+# NOTE: Please fill out the license field for your package! If it is unknown,
+# then please put 'unknown'.
+
+# Maintainer: Mr Chainman <mrchainman@chainman.xyz>
+pkgname=qtile-keys-git
+pkgver="git"
+pkgrel=1
+epoch=
+pkgdesc="Qtile Keys"
+depends=("python-rich")
+arch=("x86_64")
+url="git+https://github.com/sbk2017/qtile-scripts"
+install="INSTALL"
+license=("unknown")
+source=("$url")
+cksums=(SKIP)
+
+package() {
+	mkdir -p $pkgdir/usr/bin
+	install -m 0755 $srcdir/qtile-scripts/qtilekeys $pkgdir/usr/bin/qtile-keys
+}

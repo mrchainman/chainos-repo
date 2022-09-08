@@ -20,12 +20,14 @@ depends=(
 "chainos-neomutt-config-git"
 "chainos-neovim-config-git"
 "chainos-newsboat-config-git"
+"chainos-picom-config-git"
 "chainos-qtile-config-git"
 "chainos-qutebrowser-config-git"
 "chainos-rofi-config-git"
 "chainos-spotify-config-git"
 "chainos-starship-config-git"
 "chainos-vifm-config-git"
+"chainos-xob-config-git"
 "chainos-zathura-config-git"
 )
 arch=("x86_64")
