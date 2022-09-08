@@ -18,5 +18,5 @@ cksums=(SKIP)
 package() {
 	tar xf $pkgname-$pkgver.tar.gz
 	mkdir -p $pkgdir/usr/bin/
-	install -m 0755 $srcdir/$pkgname-$pkgname-$pkgver/chainos-* $pkgdir/usr/bin/
+	install -m 0755 $srcdir/$pkgname-$pkgname-$pkgver/* $pkgdir/usr/bin/
 }

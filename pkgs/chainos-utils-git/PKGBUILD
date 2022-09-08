@@ -17,5 +17,5 @@ cksums=(SKIP)
 
 package() {
 	mkdir -p $pkgdir/usr/bin/
-	install -m 0755 $srcdir/${pkgname%-git}/chainos-* $pkgdir/usr/bin/
+	install -m 0755 $srcdir/${pkgname%-git}/* $pkgdir/usr/bin/
 }
