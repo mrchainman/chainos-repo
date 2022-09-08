@@ -19,5 +19,7 @@ cksums=(SKIP)
 
 package() {
 	mkdir -p $pkgdir/etc/chainos
+	mkdir -p $pkgdir/usr/bin
 	cp -r $srcdir/${pkgname%-git}/xob $pkgdir/etc/chainos/
+	install -m 0755 $srcdir/${pkgname%-git}/launch-xob $pkgdir/usr/bin/
 }
