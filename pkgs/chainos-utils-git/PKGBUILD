@@ -9,6 +9,7 @@ pkgver="git"
 pkgrel=1
 epoch=
 pkgdesc="Some utilities for ChainOS - Git version"
+conflicts=("${pkgname%-git}")
 arch=("x86_64")
 url="git+https://github.com/mrchainman/${pkgname%-git}.git"
 license=('GPL')

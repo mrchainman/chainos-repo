@@ -25,8 +25,11 @@ depends=(
 "chainos-rofi-config"
 "chainos-spotify-config"
 "chainos-starship-config"
+"chainos-systemd-user-services"
+"chainos-utils"
 "chainos-vifm-config"
 "chainos-zathura-config"
 )
+conflicts=("${pkgname}-git")
 arch=("x86_64")
 license=("GPL")

@@ -10,6 +10,7 @@ pkgrel=1
 epoch=
 pkgdesc="Systemd User Serivices for ChainOS"
 depends=("systemd")
+conflicts=("${pkgname%-git}")
 arch=("x86_64")
 url="git+https://github.com/mrchainman/${pkgname%-git}.git"
 install=INSTALL

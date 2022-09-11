@@ -9,6 +9,7 @@ pkgver="0.1.1"
 pkgrel=1
 epoch=
 pkgdesc="Some utilities for ChainOS"
+conflicts=("${pkgname}-git")
 arch=("x86_64")
 url="https://github.com/mrchainman/$pkgname/archive/refs/tags/$pkgname-$pkgver.tar.gz"
 license=('GPL')

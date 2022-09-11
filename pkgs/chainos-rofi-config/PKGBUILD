@@ -10,6 +10,7 @@ pkgrel=1
 epoch=
 pkgdesc="Rofi Config  for ChainOS"
 depends=("rofi")
+conflicts=("${pkgname}-git")
 arch=("x86_64")
 url="https://github.com/mrchainman/$pkgname/archive/refs/tags/$pkgname-$pkgver.tar.gz"
 install="INSTALL"

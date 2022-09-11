@@ -10,6 +10,7 @@ pkgrel=1
 epoch=
 pkgdesc="Dunst Config  for ChainOS - Git version"
 depends=("dunst")
+conflicts=("${pkgname%-git}")
 arch=("x86_64")
 url="git+https://github.com/mrchainman/${pkgname%-git}.git"
 install="INSTALL"

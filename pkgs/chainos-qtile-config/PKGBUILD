@@ -10,6 +10,7 @@ pkgrel=1
 epoch=
 pkgdesc="Qtile Config  for ChainOS"
 depends=("qtile" "qtile-extras-git")
+conflicts=("${pkgname}-git")
 arch=("x86_64")
 url="https://github.com/mrchainman/$pkgname/archive/refs/tags/$pkgname-$pkgver.tar.gz"
 install="INSTALL"
