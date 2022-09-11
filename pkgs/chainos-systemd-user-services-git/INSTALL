@@ -1,0 +1,6 @@
+post_install() {
+	systemctl --user enable alarm.timer cal.timer mail.timer wallpaper.timer
+}
+post_upgrade() {
+	systemctl --user enable alarm.timer cal.timer mail.timer wallpaper.timer
+}
