@@ -18,6 +18,6 @@ source=("$url")
 cksums=(SKIP)
 
 package() {
-	mkdir -p $pkgdir/${pkgname}/usr/lib/systemd/user
-	install -m 644 $srcdir/${pkgname%-git}/* $pkgdir/${pkgname}/usr/lib/systemd/user/
+	mkdir -p $pkgdir/usr/lib/systemd/user
+	install -m 644 $srcdir/${pkgname%-git}/* $pkgdir/usr/lib/systemd/user/
 }

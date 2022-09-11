@@ -10,3 +10,6 @@ done
 rm repo/chainos-repo.db repo/chainos-repo.files
 mv repo/chainos-repo.db.tar.xz repo/chainos-repo.db
 mv repo/chainos-repo.files.tar.xz repo/chainos-repo.files
+git add .
+git commit -m "Update"
+git push

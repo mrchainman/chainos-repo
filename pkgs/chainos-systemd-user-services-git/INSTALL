@@ -1,6 +1,8 @@
 post_install() {
-	systemctl --user enable alarm.timer cal.timer mail.timer wallpaper.timer
+	systemctl --user daemon-reload
+	systemctl --user enable alarm.timer cal.timer mail.timer wallpaper.timer ssh-agent.service
 }
 post_upgrade() {
-	systemctl --user enable alarm.timer cal.timer mail.timer wallpaper.timer
+	systemctl --user daemon-reload
+	systemctl --user enable alarm.timer cal.timer mail.timer wallpaper.timer ssh-agent.service
 }
