@@ -3,6 +3,7 @@ printf "Git? (y/n)\n"
 read -r git
 printf "Name?\n"
 read -r name
+
 if [ $git = y ]
 then
 	mkdir ../pkgs/$name-git
