@@ -1,7 +1,0 @@
-pkg="bash"
-post_install() {
-	printf "Please make sure that ~/.config/$pkg is a symlink to /etc/chainos/$pkg\nYou can do that with ln -sf /etc/chainos/$pkg ~/.config/$pkg"
-}
-post_upgrade() {
-	printf "Please make sure that ~/.config/$pkg is a symlink to /etc/chainos/$pkg\nYou can do that with ln -sf /etc/chainos/$pkg ~/.config/$pkg"
-}

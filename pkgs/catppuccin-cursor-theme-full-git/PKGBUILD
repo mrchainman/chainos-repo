@@ -1,0 +1,14 @@
+pkgname=catppuccin-cursor-theme-full-git
+pkgver=git
+pkgrel=1
+pkgdesc='Soothing pastel theme for Cursor - Full Git Version'
+arch=('any')
+license=('GPL3')
+depends=()
+url='https://github.com/catppuccin/cursors'
+source=("git+${url}.git")
+sha256sums=('SKIP')
+package() {
+    mkdir -p "$pkgdir/usr/share/icons"
+    for i in $srcdir/cursors/cursors//*.zip; do unzip $i -d "${pkgdir}/usr/share/icons"; done
+}
