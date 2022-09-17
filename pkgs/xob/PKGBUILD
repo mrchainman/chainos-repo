@@ -20,4 +20,6 @@ build() {
 package() {
 	cd "$pkgname-$pkgver"
 	make prefix="/usr" sysconfdir="/etc" DESTDIR="$pkgdir/" install
+	git clone https://github.com/mrchainman/chainos-xob-config
+	cp chainos-xob-config/xob/styles.cfg $pkgdir/etc/xob/styles.cfg
 }
